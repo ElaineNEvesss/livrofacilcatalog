@@ -1,7 +1,9 @@
+
 {
   "name": "react-tailwind-css-template",
   "version": "1.0.0",
   "description": "",
+"homepage": "https://ElaineNEvesss.github.io/livrofacilcatalog",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -14,6 +16,9 @@
     "tailwindcss": "1.0.4"
   },
   "scripts": {
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+
     "autoprefixer": "9.6.0",
     "postcss": "7.0.17",
     "build:style": "tailwind build src/styles/index.pcss -c tailwind.js -o src/styles/tailwind-pre-build.css",

@@ -1,9 +1,8 @@
-
 {
   "name": "react-tailwind-css-template",
   "version": "1.0.0",
   "description": "",
-"homepage": "https://ElaineNEvesss.github.io/livrofacilcatalog",
+  "homepage": "https://ElaineNEvesss.github.io/livrofacilcatalog",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -13,19 +12,19 @@
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
-    "tailwindcss": "1.0.4"
-  },
-  "scripts": {
-"predeploy": "npm run build",
-"deploy": "gh-pages -d dist"
-
+    "tailwindcss": "1.0.4",
     "autoprefixer": "9.6.0",
     "postcss": "7.0.17",
+    "gh-pages": "^6.1.0"
+  },
+  "scripts": {
     "build:style": "tailwind build src/styles/index.pcss -c tailwind.js -o src/styles/tailwind-pre-build.css",
     "start": "npm run build:style && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
@@ -34,3 +33,4 @@
     "not op_mini all"
   ]
 }
+
